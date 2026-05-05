@@ -55,7 +55,7 @@ for epoch in range(3000):
     loss.backward()
     optimizer.step()
 
-    if (epoch + 1) % 50 == 0:
+    if (epoch + 1) % 1000 == 0:
         helper_utils.plot_training_progress(
             epoch = epoch
             ,loss = loss,
